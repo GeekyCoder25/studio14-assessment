@@ -57,7 +57,7 @@ const ResourceCard = ({resource}: {resource: ResourceData}) => {
 				// shadow: 'md',
 				transform: 'translateY(-4px)',
 			}}
-			h={['auto', 'auto', '275px']}
+			h={['auto', 'auto', '265px']}
 			position="relative"
 			mx={'auto'}
 			maxW={350}
@@ -77,7 +77,11 @@ const ResourceCard = ({resource}: {resource: ResourceData}) => {
 					mb={3}
 					transition="color 0.2s"
 					fontFamily={'Poppins, sans-serif'}
-					fontSize={'lg'}
+					fontSize={'xl'}
+					h={'14'}
+					display="flex"
+					alignItems="flex-end"
+					lineHeight="1.2"
 				>
 					{resource.title}
 				</Heading>
