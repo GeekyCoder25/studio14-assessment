@@ -6,8 +6,8 @@ import {IoFilterSharp} from 'react-icons/io5';
 
 export const principles = [
 	'Secure Base',
-	'Sense of Exploration',
-	'Learning Organization',
+	'Sense of Appreciation',
+	'Learning Organisation',
 	'Mission and Vision',
 	'Wellbeing',
 ];
@@ -88,6 +88,7 @@ const FilterSidebar = () => {
 										borderRadius={'xs'}
 										justifyContent={'center'}
 										alignItems={'center'}
+										cursor={'pointer'}
 									>
 										<Box
 											width={'3'}
@@ -102,6 +103,7 @@ const FilterSidebar = () => {
 										height={'4'}
 										border={'1px solid #E0E0E0'}
 										borderRadius={'xs'}
+										cursor={'pointer'}
 									/>
 								)}
 								<Text
