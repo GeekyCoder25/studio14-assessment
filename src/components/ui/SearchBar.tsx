@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import {Box, Flex, Input, InputGroup} from '@chakra-ui/react/';
+import {Box, Flex, Input, InputGroup} from '@chakra-ui/react';
 import {LuSearch} from 'react-icons/lu';
 import {useResourcesContext} from '@/context/resource';
 
