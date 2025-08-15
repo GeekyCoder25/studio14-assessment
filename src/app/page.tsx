@@ -2,7 +2,7 @@ import FilterSidebar from '@/components/FilterSidebar';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import Resource from '@/components/resource';
-import {Box, Flex} from '@chakra-ui/react';
+import {Box, Flex} from '@chakra-ui/react/';
 
 export default function Home() {
 	return (
