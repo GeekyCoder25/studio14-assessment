@@ -77,7 +77,7 @@ const ResourceCard = ({resource}: {resource: ResourceData}) => {
 					mb={3}
 					transition="color 0.2s"
 					fontFamily={'Poppins, sans-serif'}
-					fontSize={'xl'}
+					fontSize={{base: '2xl', md: 'lg'}}
 					h={'14'}
 					display="flex"
 					alignItems="flex-end"
