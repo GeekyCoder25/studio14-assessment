@@ -22,6 +22,7 @@ const SearchBar = () => {
 					backgroundColor={'transparent'}
 					borderColor={{base: 'transparent', lg: '#A1A1A1'}}
 					_placeholder={{color: {base: '#222222', lg: '#4F4F4F'}}}
+					color={{base: '#222222', lg: '#4F4F4F'}}
 					className="inter"
 					as="search"
 					borderRadius={'md'}
