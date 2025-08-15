@@ -57,7 +57,7 @@ const ResourceCard = ({resource}: {resource: ResourceData}) => {
 				// shadow: 'md',
 				transform: 'translateY(-4px)',
 			}}
-			h={['auto', 'auto', '265px']}
+			h={['auto', 'auto', '280px']}
 			position="relative"
 			mx={'auto'}
 			maxW={350}
@@ -68,8 +68,8 @@ const ResourceCard = ({resource}: {resource: ResourceData}) => {
 			</Box>
 
 			{/* Content */}
-			<Box px={6} pt={10} pb={6} zIndex={1} position={'relative'}>
-				<Box mb={12}>{getIcon(resource.type)}</Box>
+			<Box px={6} pt={12} pb={6} zIndex={1} position={'relative'}>
+				<Box mb={10}>{getIcon(resource.type)}</Box>
 				<Heading
 					as="h3"
 					fontWeight="bold"
@@ -77,8 +77,7 @@ const ResourceCard = ({resource}: {resource: ResourceData}) => {
 					mb={3}
 					transition="color 0.2s"
 					fontFamily={'Poppins, sans-serif'}
-					fontSize={{base: '2xl', md: 'lg'}}
-					h={'14'}
+					fontSize={{base: 'xl', md: 'lg'}}
 					display="flex"
 					alignItems="flex-end"
 					lineHeight="1.2"
