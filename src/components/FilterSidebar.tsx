@@ -1,7 +1,7 @@
 'use client';
 import {useResourcesContext} from '@/context/resource';
 import {useState} from 'react';
-import {Box, Flex, Text, Checkbox} from '@chakra-ui/react';
+import {Box, Flex, Text} from '@chakra-ui/react';
 import {IoFilterSharp} from 'react-icons/io5';
 
 export const principles = [
@@ -73,27 +73,46 @@ const FilterSidebar = () => {
 				{isOpen && (
 					<Flex flexDirection="column" align="start" gap={2} pl={2}>
 						{items.map((item, index) => (
-							<Checkbox.Root
+							<Flex
 								key={index}
-								size="sm"
-								colorPalette={'blue'}
-								onCheckedChange={() => toggleCheckbox(item)}
-								defaultChecked={selectedFilters[filterKey].includes(item)}
-								cursor={'pointer'}
+								alignItems={'center'}
+								gap={2}
+								onClick={() => toggleCheckbox(item)}
+								as={'button'}
 							>
-								<Checkbox.HiddenInput />
-								<Checkbox.Control>
-									<Checkbox.Indicator />
-								</Checkbox.Control>
-								<Checkbox.Label
+								{selectedFilters[filterKey].includes(item) ? (
+									<Flex
+										width={'4'}
+										height={'4'}
+										border={'1px solid #E0E0E0'}
+										borderRadius={'xs'}
+										justifyContent={'center'}
+										alignItems={'center'}
+									>
+										<Box
+											width={'3'}
+											height={'3'}
+											borderRadius={'xs'}
+											bg={'#3F3F3F'}
+										/>
+									</Flex>
+								) : (
+									<Box
+										width={'4'}
+										height={'4'}
+										border={'1px solid #E0E0E0'}
+										borderRadius={'xs'}
+									/>
+								)}
+								<Text
 									color={'#3F3F3F'}
 									fontWeight={'normal'}
 									fontSize={'md'}
 									className="inter"
 								>
 									{item}
-								</Checkbox.Label>
-							</Checkbox.Root>
+								</Text>
+							</Flex>
 						))}
 					</Flex>
 				)}
